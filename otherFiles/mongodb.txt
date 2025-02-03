@@ -1,0 +1,22 @@
+show databases // all database 
+use students  // select specific database
+show collections // all tables / objects in student database
+
+_id is provided to every entry in collection to uniquely identify them.
+ 
+db.createCollection("Users")
+db.createCollection("admin")
+
+show collections
+ 
+db.users.insertOne({id:1, username:'Alice',age:25});
+db.users.insertOne({id=2, username:'Price',age:20});
+db.users.find();
+
+db.users.find({age:{$gt:23}}); //Age greater than 23
+db.users.find({age:{$lt:22}});
+
+db.users.updateOne({username :'Alice'},{$set:{age:34}});
+db.users.updateOne({username :'Alice'},{$set:{username:Dhruv}});
+
+students.users.deleteOne({id:2});

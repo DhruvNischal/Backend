@@ -1,0 +1,12 @@
+git init // add git to vscode file
+git status // check which all files are added under watch dog
+git add . // add all files under git watching
+git add server.js // specfic file 
+gitignore file: not to add under tracking(Node_modules)node_module/
+git rm-r--cached node_modules //remove any file from saving
+git commit -m 'First version of our hOTELS Backend'
+git commit -m "Second Version"
+git push //push the changes to github
+git pull pull the changes done by the peer
+
+npm i dotenv
